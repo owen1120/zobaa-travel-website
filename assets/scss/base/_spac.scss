@@ -1,0 +1,9 @@
+:root{
+    --spac-header-24-8: 1.5rem
+}
+
+@media (max-width: 769px) {
+    :root{
+        --spac-header-24-8: .5rem
+    }
+}

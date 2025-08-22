@@ -1,0 +1,115 @@
+.btn-primary{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: .25rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $white;
+    background: $primary-100;
+    background-color: $primary-100;
+    border: 1px solid transparent;
+    border-radius: .75rem;
+    padding: 1rem 2rem;
+    span{
+        font-size: 1.5rem;
+    }
+    &:hover, &.hover, &:focus, &.focus{
+        font-weight: 600;
+        background: $primary-120;
+        background-color: $primary-120;
+    }
+    &:disabled, &.disabled{
+        font-weight: 600;
+        color: $neutral-60;
+        background: $neutral-40;
+        background-color: $neutral-40;
+    }
+}
+
+.btn-secondary{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: .25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: $primary-100;
+    background: $neutral-0;
+    background-color: $neutral-0;
+    border-radius: .75rem;
+    border: 1px solid $primary-100;
+    padding: 1rem 2rem;
+    span{
+        font-size: 1.5rem;
+    }
+    &:hover, &.hover, &:focus, &.focus{
+        color: $neutral-0;
+        background: $primary-100;
+        background-color: $primary-100;
+        border: 1px solid transparent;
+    }
+    &:disabled, &.disabled{
+        color: $neutral-60;
+        background: $neutral-40;
+        background-color: $neutral-40;
+    }
+}
+
+.btn-sm-primary{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: .25rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $white;
+    background: $primary-100;
+    background-color: $primary-100;
+    border: 1px solid transparent;
+    border-radius: .75rem;
+    padding: .75rem 1rem;
+    span{
+        font-size: 1.5rem;
+    }
+    &:hover, &.hover, &:focus, &.focus{
+        font-weight: 600;
+        background: $primary-120;
+        background-color: $primary-120;
+    }
+    &:disabled, &.disabled{
+        font-weight: 600;
+        color: $neutral-60;
+        background: $neutral-40;
+        background-color: $neutral-40;
+    }
+}
+
+.btn-sm-secondary{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: .25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: $primary-100;
+    background: $neutral-0;
+    background-color: $neutral-0;
+    border-radius: .75rem;
+    border: 1px solid $primary-100;
+    padding: .75rem 1rem;
+    span{
+        font-size: 1.5rem;
+    }
+    &:hover, &.hover, &:focus, &.focus{
+        color: $neutral-0;
+        background: $primary-100;
+        background-color: $primary-100;
+        border: 1px solid transparent;
+    }
+    &:disabled, &.disabled{
+        color: $neutral-60;
+        background: $neutral-40;
+        background-color: $neutral-40;
+    }
+}

@@ -1,0 +1,20 @@
+.search-box{
+    max-width: 400px;
+    max-height: 44px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: $neutral-60;
+    background-color: $white;
+    border: 1px solid $neutral-40;
+    border-radius: .5rem;
+    padding: .5rem .75rem;
+    label{
+        font-size: 1.5rem;
+    }
+    input{
+        color: $neutral-60;
+        border: none;
+    }
+}
