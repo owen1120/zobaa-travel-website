@@ -1,14 +1,20 @@
 .header{
     .navbar{
         background-color: rgba($white, .5);
-        backdrop-filter: blur(40px);
-        -webkit-backdrop-filter: blur(40px);
-        border-bottom: .5px solid $border-primary;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-bottom: .5px solid $neutral-40;
         padding: 1rem 2rem;
         .container{
             display: flex;
             align-items: center;
             gap: var(--spac-header-24-8);
+            .navbar-brand{
+                width: 180px;
+                img{
+                    width: 100%;
+                }
+            }
             .cart-login{
                 display: flex;
                 justify-content: end;

@@ -1,0 +1,176 @@
+.main-index{
+    .hero{
+        position: relative;
+        &::after{
+            content: '';
+            width: 100%;
+            height: 320px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(#221F1E, 0) 0%, rgba(#221F1E, .3) 30%,  #221F1E 100%);
+        }
+        .hero-text{
+            width: 880px;
+            position: absolute;
+            top: 300px;
+            left: 422px;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            .hero-header{
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                .hero-header-text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .75rem;
+                    .hero-tag{
+                        align-self: flex-start;
+                        background-color: $neutral-10;
+                        border-radius: 1rem;
+                        padding: 1rem;
+                    }
+                }
+            }
+            .hero-search{
+                width: 720px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                background-color: $white;
+                border: 1px solid $neutral-40;
+                border-radius: 1rem;
+                padding: .5rem;
+                .icon{
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.5rem;
+                }
+                input{
+                    flex-grow: 1;
+                    color: $neutral-60;
+                    border: none;
+                }
+            }
+        }
+    }
+    .exclusive-recommendations{
+        background-color: #221F1E;
+        padding: 7.5rem 0;
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+            .exclusive-recommendations-header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: $white;
+                .desc-container{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+                    .desc{
+                        display: flex;
+                        flex-direction: column;
+                        gap: .5rem;
+                    }
+                    .desc-link{
+                        display: flex;
+                        align-items: center;
+                        gap: .5rem;
+                        span{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+            .product-container{
+                display: flex;
+                justify-content: center;
+                gap: 1.5rem;
+            }
+        }
+    }
+    .first-stop{
+        position: relative;
+        padding: 120px 0;
+        // overflow: hidden;
+        .container{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1;
+            .cards-container{
+                display: flex;
+                flex-direction: column;
+                gap: 1.25rem;
+                .cards{
+                    display: flex;
+                    gap: 1.5rem;
+                    &:nth-child(even){
+                        justify-content: flex-end;
+                        padding-left: 5rem;
+                    }
+                }
+            }
+            .text{
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                .desc{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .25rem;
+                    color: $primary-60;
+                }
+            }
+        }
+        .deco-bg{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .deco-text{
+            position: absolute;
+            bottom: 360px;
+            left: 80px;
+        }
+    }
+    .travel-map{
+        background-color: $primary-10;
+        .quad-container-top {
+            height: 5rem; 
+            .quad-content {
+            background-color: $white; 
+            width: 100%; 
+            height: 100%;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 80%);
+            }
+        }
+        .travel-map-content{
+            padding: 120px 0;
+            .container{
+                display: flex;
+                flex-direction: column;
+                gap: 5rem;
+            }
+        }
+        .quad-container-bottom{
+            height: 5rem;
+            .quad-content{
+                width: 100%;
+                height: 100%;
+                background-color: $white;
+                clip-path: polygon(100% 0, 100% 20%, 100% 100%, 0 100%);
+            }
+        }
+    }
+}
