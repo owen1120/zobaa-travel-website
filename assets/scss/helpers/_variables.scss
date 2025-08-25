@@ -187,7 +187,7 @@ $primary-10: #f3eeec;
 
 $success-120: #48970f;
 $success-100: #7cd31f;
-$succedd-20: #ddfaa5;
+$success-20: #ddfaa5;
 $success-10: #f0fcd1;
 $info-120: #1566b5;
 $info-100: #2aaffc;
@@ -328,14 +328,14 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $primary-600;//$blue !default; custom
+$primary:       $primary-100;//$blue !default; custom
 $secondary:     $gray-600 !default;
-$success:       $green !default;
-$info:          $cyan !default;
+$success:       $success-100 !default;
+$info:          $info-100 !default;
 $warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$danger:        $alert-100 !default;
+$light:         $white !default;
+$dark:          $black !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -348,10 +348,9 @@ $theme-colors: (
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
-  "accent":     $accent-600,  //custom
-  "heart":      #EE6666,    //custom
+
   //custom
-  "primary-120": $primary-1200,
+  "primary-120": $primary-120,
   "primary-100": $primary-100,
   "primary-80": $primary-80,
   "primary-60": $primary-60,
@@ -629,9 +628,9 @@ $border-radius-2xl:           $border-radius-xxl !default; // Deprecated in v5.3
 // fusv-enable
 
 // scss-docs-start box-shadow-variables
-$box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
-$box-shadow-sm:               2px 2px 6px rgba(0, 0, 0, 0.1) !default; //custom
-$box-shadow-lg:               4px 4px 12px rgba(0, 0, 0, 0.15) !default; //custom
+$box-shadow:                  0 0 0 4px rgba($primary-100, .1) !default;
+$box-shadow-sm:               0 0 0 4px rgba($primary-100, .1) !default; //custom
+$box-shadow-lg:               0 0 0 4px rgba($primary-100, .1) !default; //custom
 $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
 // scss-docs-end box-shadow-variables
 
@@ -867,17 +866,17 @@ $table-variants: (
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
 // scss-docs-start input-btn-variables
-$input-btn-padding-y:         .375rem !default;
-$input-btn-padding-x:         .75rem !default;
+$input-btn-padding-y:         1rem !default;
+$input-btn-padding-x:         1rem !default;
 $input-btn-font-family:       null !default;
 $input-btn-font-size:         $font-size-base !default;
 $input-btn-line-height:       $line-height-base !default;
 
 $input-btn-focus-width:         $focus-ring-width !default;
 $input-btn-focus-color-opacity: $focus-ring-opacity !default;
-$input-btn-focus-color:         $focus-ring-color !default;
+$input-btn-focus-color:         $primary-100 !default;
 $input-btn-focus-blur:          $focus-ring-blur !default;
-$input-btn-focus-box-shadow:    $focus-ring-box-shadow !default;
+$input-btn-focus-box-shadow:    $box-shadow !default;
 
 $input-btn-padding-y-sm:      .25rem !default;
 $input-btn-padding-x-sm:      .5rem !default;
